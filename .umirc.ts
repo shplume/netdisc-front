@@ -1,6 +1,8 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
+  plugins: ['@umijs/plugin-electron'],
+  electron: {},
   antd: {},
   access: {},
   model: {},
