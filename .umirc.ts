@@ -9,6 +9,12 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {},
+  locale: {
+    // 默认使用 src/locales/zh-CN.ts 作为多语言文件
+    default: 'zh-CN',
+    baseSeparator: '-',
+    title: true,
+  },
   routes: [
     {
       path: '/',
@@ -30,7 +36,7 @@ export default defineConfig({
       component: './Table',
     },
     {
-      name: '登录',
+      title: 'title.login',
       path: '/login',
       component: './Login',
     },
